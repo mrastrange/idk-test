@@ -1,6 +1,10 @@
+name: CI Test  # The name of your workflow
+
+on: [push]    # Trigger: runs on every push to the repo
 
 jobs:
   test:
+    runs-on: ubuntu-latest  # You must specify the environment (runner)
     steps:
       - name: 23f1002579@ds.study.iitm.ac.in
         run: echo "Hello, world!"
